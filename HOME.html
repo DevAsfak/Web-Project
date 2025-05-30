@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standing Desks Ltd - Products</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+
+    <div class="logo">Standing Desks Ltd</div>
+    <input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox">
+    <label for="hamburger-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="HOME.html">Home</a></li>
+            <li class="dropdown">
+                <a href="product.html">Products</a>
+                <ul class="dropdown-content">
+                    <li><a href="RisingDesk.html">Rising Desk</a></li>
+                    <li><a href="ExecutiveDesk.html">Executive Desk</a></li>
+                    <li><a href="AdjustableDesk.html">Adjustable Desk</a></li>
+                    <li><a href="CompactDesk.html">Compact Desk</a></li>
+                </ul>
+            </li>
+            <li><a href="Health.html">Health Benefits</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="BASKET.html"><img src="IMAGE/PIC18.jpg" alt="BASKET"></a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Popup for Special Offer -->
+<div class="popup" id="popup">
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <p><strong>Special Offer!</strong> Get 10% off on all products. Shop now and save big!</p>
+            <button onclick="document.getElementById('popup').classList.remove('show')">Close</button>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section with Transparent Overlay Text -->
+<div class="hero">
+    <div class="hero-overlay">
+        
+        <h1>Welcome to Standing Desks Ltd</h1>
+        <p>Discover premium ergonomic desks that redefine your workspace and enhance your health.</p>
+        <button onclick="document.getElementById('popup').classList.add('show')">CLICK_HERE</button>
+    </div>
+</div>
+
+<!-- Slideshow -->
+<div class="slideshow">
+    <img src="IMAGE/PIC1.jpg" alt="Slide 1">
+    <img src="IMAGE/PIC2.jpg" alt="Slide 2">
+    <img src="IMAGE/PIC3.jpg" alt="Slide 3">
+</div>
+
+<!-- Health Benefits Section with a Click-to-Show Popup -->
+<section class="health-benefits">
+    <h2>Health Benefits</h2>
+    <p><strong>Standing desks improve posture, reduce back pain, and boost energy levels.</strong> Enjoy greater productivity and better health!</p>
+    <button onclick="document.getElementById('health-popup').classList.toggle('show')">Click for More Info</button>
+
+    <!-- Popup for additional health benefits -->
+    <div class="popup" id="health-popup">
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <h3>Why Standing Desks are Beneficial:</h3>
+                <ul>
+                    <li>Reduce the risk of heart disease and back pain.</li>
+                    <li>Improves posture and energy levels.</li>
+                    <li>Reduces fatigue and boosts mood.</li>
+                    <li>Helps in maintaining a healthy weight by encouraging movement.</li>
+                </ul>
+                <div class="popup-images">
+                    <img src="IMAGE/PIC4.jpeg" alt="Health Benefits Image">
+                    <img src="IMAGE/PIC5.jpeg" alt="Additional Health Benefits">
+                </div>
+                <button onclick="document.getElementById('health-popup').classList.remove('show')">Close</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Product Section with Special Offers -->
+<section class="product-section">
+    <h2>Our Products</h2>
+    <div class="product">
+        <img src="IMAGE/PIC6.jpg" alt="Rising Desk">
+        <p><strong>Rising Desk</strong> - Ergonomic and adjustable for ultimate comfort.</p>
+        <p><strong>Special Offer!</strong> Get 10% off when you shop today!</p>
+        <div class="buy-now-container">
+            <a href="BASKET.html" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+    <div class="product">
+        <img src="IMAGE/PIC7.jpg" alt="Executive Desk">
+        <p><strong>Executive Desk</strong> - Stylish and functional for any office space.</p>
+        <p><strong>Special Offer!</strong> Get 10% off when you shop today!</p>
+        <div class="buy-now-container">
+            <a href="BASKET.html" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+    <div class="product">
+        <img src="IMAGE/PIC8.jpg" alt="Adjustable Desk">
+        <p><strong>Adjustable Desk</strong> - Easily adjusts to your sitting and standing preferences.</p>
+        <p><strong>Special Offer!</strong> Get 10% off when you shop today!</p>
+        <div class="buy-now-container">
+            <a href="BASKET.html" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Standing Desks Ltd. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://www.facebook.com/"><img src="IMAGE/PIC9.jpg" alt="Facebook"></a>
+        <a href="https://www.youtube.com/"><img src="IMAGE/PIC10.jpg" alt="YouTube"></a>
+        <a href="https://x.com/twitter?lang=en"><img src="IMAGE/PIC11.jpg" alt="Twitter"></a>
+    </div>
+</footer>
+</body>
+</html>
